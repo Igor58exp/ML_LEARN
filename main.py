@@ -14,9 +14,7 @@ print(iris.target_names)
 for i in range(len(iris.target)):
     print(i, " ", iris.target[i], " ", iris.data[i])
 
-
 '''
-
 rnd = nmp.random.RandomState(seed = 123)
 x = rnd.uniform(low = 0.0, high = 1.0, size = (3, 5))
 print(x)
