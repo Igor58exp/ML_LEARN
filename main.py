@@ -1,3 +1,13 @@
+import tensorflow as tf
+node1 = tf.constant(3.0, tf.float32)
+node2 = tf.constant(4.0)
+print(node1, node2)
+session = tf.Session()
+print(session.run([node1, node2]))
+session.close()
+
+
+'''
 import inspect
 import numpy as nmp
 import random
@@ -16,6 +26,7 @@ def lineNumber():
     """Returns the current line number in our program."""
     return inspect.currentframe().f_back.f_lineno
 '''
+'''
 def euc(a, b):
     return distance.euc(a, b)
 
@@ -30,6 +41,7 @@ class ScrappyKNN():
             predictions.append(label)
         return predictions
 '''
+'''
 ######   Pipeline  --------------------------------------------------------------
 iris = datasets.load_iris()
 X = iris.data
@@ -41,7 +53,7 @@ predictions = my_classifier.predict(X_test)
 print(accuracy_score(y_test, predictions))
 
 
-
+'''
 '''
 features = [[140, 1], [130, 1], [150, 0], [170, 0]]
 labels = [0, 0, 1, 1]
